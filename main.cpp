@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstring>
+#include <cstdint>  // Include this for uint32_t and uint16_t
 
 unsigned char* slice;
 char* slicestring;
