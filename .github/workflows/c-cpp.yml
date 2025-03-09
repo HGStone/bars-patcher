@@ -37,7 +37,7 @@ jobs:
 
       - name: Compile (macOS)
         if: runner.os == 'macOS'
-        run: g++ -static -o bars-patcher-macos main.cpp
+        run: g++ -o bars-patcher-macos main.cpp -static-libstdc++ -static-libgcc
 
       - name: Upload Executable (Windows)
         if: runner.os == 'Windows'
