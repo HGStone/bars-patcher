@@ -44,18 +44,18 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bars-patcher-windows
-          path: bars-patcher-windows.exe
+          path: bars-patcher.exe
 
       - name: Upload Executable (Linux)
         if: runner.os == 'Linux'
         uses: actions/upload-artifact@v4
         with:
           name: bars-patcher-linux
-          path: bars-patcher-linux
+          path: bars-patcher
 
       - name: Upload Executable (macOS)
         if: runner.os == 'macOS'
         uses: actions/upload-artifact@v4
         with:
           name: bars-patcher-macos
-          path: bars-patcher-macos
+          path: bars-patcher
