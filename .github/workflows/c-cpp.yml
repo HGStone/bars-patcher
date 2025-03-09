@@ -29,15 +29,15 @@ jobs:
 
       - name: Compile (Windows)
         if: runner.os == 'Windows'
-        run: g++ -static -o bars-patcher-windows.exe main.cpp
+        run: g++ -static -o bars-patcher.exe main.cpp
 
       - name: Compile (Linux)
         if: runner.os == 'Linux'
-        run: g++ -static -o bars-patcher-linux main.cpp
+        run: g++ -static -o bars-patcher main.cpp
 
       - name: Compile (macOS)
         if: runner.os == 'macOS'
-        run: clang++ -o bars-patcher-macos main.cpp -static-libstdc++
+        run: clang++ -o bars-patcher main.cpp -static-libstdc++
 
       - name: Upload Executable (Windows)
         if: runner.os == 'Windows'
