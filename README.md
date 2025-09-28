@@ -1,6 +1,6 @@
 # bars-patcher
 
-This fork of the project is just to provide stnadalone executables instead of needing the online tool.
+This fork of the project is just to provide standalone executables instead of needing the online tool.
 
 **There is now a new and improved version of this tool, the [automatic BARS patcher](https://github.com/ic-scm/automatic-bars-patcher).**
 
